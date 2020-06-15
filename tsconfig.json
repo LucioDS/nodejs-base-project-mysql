@@ -1,0 +1,28 @@
+{
+  "noImplicitAny": true,
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "declaration": false,
+    "sourceMap": false,
+    "outDir": "build",
+    "target": "es6",
+    "strict": true
+  },
+  "include": [
+    "src/**/*",
+    "server.ts",
+    "config.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
