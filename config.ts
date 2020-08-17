@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-export default {
+export const config = {
 	RUNNING_PORT: process.env.RUNNING_PORT,
 	DB_HOSTNAME: process.env.DB_HOSTNAME,
 	DB_USERNAME: process.env.DB_USERNAME,

@@ -2,7 +2,7 @@
 import { createConnection } from 'mysql2';
 
 // env variables for database configuration
-import config from '../../config';
+import { config } from '../../config';
 
 const db = createConnection({
 	host: config.DB_HOSTNAME,

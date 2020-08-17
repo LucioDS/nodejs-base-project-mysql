@@ -1,13 +1,13 @@
 // dependencies
-import {Router as router} from 'express';
+import { Router as router } from 'express';
 
 // controllers
-import monitoringControllers from '../controllers/monitoring';
+import { healthz, sqlcheck } from '../controllers/monitoring';
 
 const monitoring = router();
 
-monitoring.get('/healthz', monitoringControllers.healthz);
+monitoring.get('/healthz', healthz);
 
-monitoring.get('/healthz-sql', monitoringControllers.sqlcheck);
+monitoring.get('/healthz-sql', sqlcheck);
 
 export default monitoring;
